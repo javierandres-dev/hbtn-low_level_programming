@@ -4,7 +4,7 @@
 #include <stdio.h>
 /* betty style doc for function main goes there */
 /**
- * main - Last digit
+ * main - Entry point
  *
  * Return: Always 0
  */
@@ -23,7 +23,7 @@ int main(void)
 	{
 		if (u <= 5)
 		{
-			printf("Last digit of %d is %d and is less than 6 and not is 0\n", n, u); }
+			printf("Last digit of %d is %d and is less than 6 and not 0\n", n, u); }
 		else
 		{
 			printf("Last digit of %d is %d and is greater than 5\n", n, u); }
