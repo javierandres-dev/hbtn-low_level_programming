@@ -17,3 +17,8 @@ int print_alphabet_x10(void);
 #define _ISLOWER_H_
 int _islower(int c);
 #endif
+
+#ifndef _ISALPHA_H_
+#define _ISALPHA_H_
+int _isalpha(int c);
+#endif
