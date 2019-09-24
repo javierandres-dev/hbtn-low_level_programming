@@ -1,0 +1,16 @@
+#include "holberton.h"
+
+int print_alphabet(void)
+
+{
+	char letra = 'a';
+
+	do
+
+	{
+		_putchar (letra);
+		letra++;
+	} while (letra <= 'z');
+	_putchar ('\n');
+	return (0);
+}
