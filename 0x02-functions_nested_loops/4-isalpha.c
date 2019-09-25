@@ -2,8 +2,7 @@
 /**
  * _isalpha - checks for alphabetic character
  * @c: The character input
- * Returns:
- * Return 1 if c is a letter, lowercase or uppercase
+ * Return: 1 if c is a letter, lowercase or uppercase
  * Return 0 otherwise.
  */
 int _isalpha(int c)
@@ -13,17 +12,11 @@ int _isalpha(int c)
 
 	for (lowercase = 'a'; lowercase <= 'z'; lowercase++)
 	{
-		if (lowercase == c)
+		for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
 		{
-			return (1);
-		} else
-		{
-			for (uppercase = 'A'; uppercase <= 'Z'; uppercase++)
+			if (lowercase == c || uppercase == c)
 			{
-				if (uppercase == c)
-				{
-					return (1);
-				}
+				return (1);
 			}
 		}
 	}
