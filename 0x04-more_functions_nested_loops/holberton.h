@@ -27,3 +27,8 @@ int _putchar(char c);
 #define _PRINT_MOST_NUMBERS_H_
 void print_most_numbers(void);
 #endif
+
+#ifndef _MORE_NUMBERS_H_
+#define _MORE_NUMBERS_H_
+void more_numbers(void);
+#endif
