@@ -22,3 +22,8 @@ void print_numbers(void);
 #define _PUTCHAR_H_
 int _putchar(char c);
 #endif
+
+#ifndef _PRINT_MOST_NUMBERS_H_
+#define _PRINT_MOST_NUMBERS_H_
+void print_most_numbers(void);
+#endif
