@@ -42,3 +42,8 @@ int print_last_digit(int);
 #define _JACK_BAUER_H_
 void jack_bauer(void);
 #endif
+
+#ifndef _TIMES_TABLE_H_
+#define _TIMES_TABLE_H_
+void times_table(void);
+#endif
