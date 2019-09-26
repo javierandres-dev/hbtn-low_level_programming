@@ -12,3 +12,13 @@ int _isdigit(int c);
 #define _MUL_H_
 int mul(int a, int b);
 #endif
+
+#ifndef _PRINT_NUMBERS_H_
+#define _PRINT_NUMBERS_H_
+void print_numbers(void);
+#endif
+
+#ifndef _PUTCHAR_H_
+#define _PUTCHAR_H_
+int _putchar(char c);
+#endif
