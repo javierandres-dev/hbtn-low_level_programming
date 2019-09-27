@@ -42,3 +42,8 @@ void print_line(int n);
 #define _PRINT_DIAGONAL_H_
 void print_diagonal(int n);
 #endif
+
+#ifndef _PRINT_SQUARE_H_
+#define _PRINT_SQUARE_H_
+void print_square(int size);
+#endif
