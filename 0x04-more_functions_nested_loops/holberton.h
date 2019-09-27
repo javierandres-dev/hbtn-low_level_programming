@@ -37,3 +37,8 @@ void more_numbers(void);
 #define _PRINT_LINE_H_
 void print_line(int n);
 #endif
+
+#ifndef _PRINT_DIAGONAL_H_
+#define _PRINT_DIAGONAL_H_
+void print_diagonal(int n);
+#endif
