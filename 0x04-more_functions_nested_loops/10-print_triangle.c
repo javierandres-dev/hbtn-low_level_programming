@@ -20,16 +20,14 @@ void print_triangle(int size)
 		{
 			for (j = 1; j <= size; j++)
 			{
-				for (aux = 1; aux <= size; j++)
+				aux = size - j;
+				if (i > aux)
 				{
-					if (j == size || aux < size)
-					{
-						_putchar('#');
-					}
-					else
-					{
-						_putchar(' ');
-					}
+					_putchar('#');
+				}
+				else
+				{
+					_putchar(' ');
 				}
 			}
 			_putchar('\n');
