@@ -14,16 +14,16 @@ int main(void)
 		{
 			if (n % 3 == 0 && n % 5 == 0)
 			{
-				x = printf("FizzBuzz ");
+				printf("FizzBuzz ");
 			}
 
 			else if (n % 3 == 0)
 			{
-				x = printf("Fizz ");
+				printf("Fizz ");
 			}
 			else if (n % 5 == 0)
 			{
-				x = printf("Buzz ");
+				printf("Buzz ");
 			}
 		}
 		else
