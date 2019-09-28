@@ -6,7 +6,6 @@
 int main(void)
 {
 	int n;
-	int x;
 
 	for (n = 1; n <= 100; n++)
 	{
@@ -28,8 +27,7 @@ int main(void)
 		}
 		else
 		{
-			x = n;
-			printf("%d ", x);
+			printf("%d ", n);
 		}
 	}
 	printf("\n");
