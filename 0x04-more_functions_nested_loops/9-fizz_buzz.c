@@ -12,17 +12,18 @@ int main(void)
 	{
 		if (n % 3 == 0 || n % 5 == 0)
 		{
-			if (n % 3 == 0)
+			if (n % 3 == 0 && n % 5 == 0)
+			{
+				x = printf("FizzBuzz ");
+			}
+
+			else if (n % 3 == 0)
 			{
 				x = printf("Fizz ");
 			}
 			else if (n % 5 == 0)
 			{
 				x = printf("Buzz ");
-			}
-			else
-			{
-				x = printf("FizzBuzz ");
 			}
 		}
 		else

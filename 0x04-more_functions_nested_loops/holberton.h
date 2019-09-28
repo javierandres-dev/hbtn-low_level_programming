@@ -47,3 +47,8 @@ void print_diagonal(int n);
 #define _PRINT_SQUARE_H_
 void print_square(int size);
 #endif
+
+#ifndef _PRINT_TRIANGLE_H_
+#define _PRINT_TRIANGLE_H_
+void print_triangle(int size);
+#endif
