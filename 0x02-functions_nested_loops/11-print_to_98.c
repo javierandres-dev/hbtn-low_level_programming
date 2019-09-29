@@ -16,34 +16,34 @@ void print_to_98(int n)
 	}
 	else
 	{
-	if (n <= to)
-	{
-		for (i = n; i <= to; i++)
+		if (n <= to)
 		{
-			if (i < to)
+			for (i = n; i <= to; i++)
 			{
-				printf("%d ", i);
-			}
-			else
-			{
-				printf("%d", i);
+				if (i < to)
+				{
+					printf("%d, ", i);
+				}
+				else
+				{
+					printf("%d", i);
+				}
 			}
 		}
-	}
-	if (n >= to)
-	{
-		for (i = n; i >= to; i--)
+		if (n >= to)
 		{
-			if (i > to)
+			for (i = n; i >= to; i--)
 			{
-				printf("%d ", i);
-			}
-			else
-			{
-				printf("%d", i);
+				if (i > to)
+				{
+					printf("%d, ", i);
+				}
+				else
+				{
+					printf("%d", i);
+				}
 			}
 		}
-	}
 	}
 	printf("\n");
 }
