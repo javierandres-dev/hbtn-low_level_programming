@@ -14,7 +14,7 @@ int main(void)
 	i = 0;
 
 	while (i < 10)
-	{/* i never increments so it is always going to print 0 */
+	{/* i never increments */
 		putchar(i);
 	}
 
