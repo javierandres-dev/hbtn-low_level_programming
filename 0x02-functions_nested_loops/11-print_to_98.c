@@ -10,26 +10,40 @@ void print_to_98(int n)
 	int to = 98;
 	int i;
 
-	if (n < to || n > to)
+	if (n == to)
 	{
-		if (n < to)
-		{
-			for (i = n; i <= to; i++)
-			{
-				printf("%d ", i);
-			}
-		}
-		if (n > to)
-		{
-			for (i = n; i >= to; i--)
-			{
-				printf("%d ", i);
-			}
-		}
+		printf("%d", n);
 	}
 	else
 	{
-		printf("%d", n);
+	if (n <= to)
+	{
+		for (i = n; i <= to; i++)
+		{
+			if (i < to)
+			{
+				printf("%d ", i);
+			}
+			else
+			{
+				printf("%d", i);
+			}
+		}
+	}
+	if (n >= to)
+	{
+		for (i = n; i >= to; i--)
+		{
+			if (i > to)
+			{
+				printf("%d ", i);
+			}
+			else
+			{
+				printf("%d", i);
+			}
+		}
+	}
 	}
 	printf("\n");
 }
