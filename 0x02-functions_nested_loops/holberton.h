@@ -52,3 +52,8 @@ void times_table(void);
 #define _ADD_H_
 int add(int, int);
 #endif
+
+#ifndef _PRINT_TO_98_H_
+#define _PRINT_TO_98_H_
+void print_to_98(int n);
+#endif
