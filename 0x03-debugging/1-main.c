@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - causes an infinite loop i never increments so it will be less than 10
+ * main - cause an infinite loop i never increments so it will be less than 10
  * Return: 0
  */
 
