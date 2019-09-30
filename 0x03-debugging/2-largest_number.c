@@ -8,15 +8,15 @@
  */
 int largest_number(int a, int b, int c)
 {
-	if (a >= b && a >= c)
+	if (a > b && c > b)
 	{
 		largest = a;
 	}
-	else if (b > c)
+	else if (b > c && a > c)
 	{
 		largest = b;
 	}
-	else
+	else if (c > a && b > a)
 	{
 		largest = c;
 	}
