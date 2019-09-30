@@ -1,5 +1,0 @@
-#include "holberton.h"
-main(void)
-{
-	return(0);
-}

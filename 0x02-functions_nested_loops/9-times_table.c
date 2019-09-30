@@ -16,26 +16,22 @@ void times_table(void)
 	{
 		for (x = 0; x <= 9; x++)
 		{
+			if(x > 0)
+			{
+ 				_putchar(',');
+			}
 			result = y * x;
+			if(result <= 9)
+			{
+				dig1 = result;
+ 				_putchar('0' + dig1);
+			}
 			if(result > 9)
 			{
 				dig1 = result / 10;
 				dig2 = result % 10;
 				_putchar('0' + dig1);
  				_putchar('0' + dig2);
-
-			}
-			else
-			{
-				dig1 = ' ';
-				dig2 = result;
-				_putchar(dig1);
-				_putchar('0' + dig2);
- 			}
-			if(dig2 < 10)
-			{
-				_putchar(',');
-				_putchar(' ');
 			}
 		}
 		_putchar('\n');
