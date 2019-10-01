@@ -27,3 +27,8 @@ int _putchar(char c);
 #define _PRINT_REV_H
 void print_rev(char *s);
 #endif
+
+#ifndef _REV_STRING_H
+#define _REV_STRING_H
+void rev_string(char *s);
+#endif
