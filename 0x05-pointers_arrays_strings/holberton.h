@@ -22,3 +22,8 @@ void _puts(char *str);
 #define _PUTCHAR_H
 int _putchar(char c);
 #endif
+
+#ifndef PRINT_REV_H
+#define _PRINT_REV_H
+void print_rev(char *s);
+#endif
