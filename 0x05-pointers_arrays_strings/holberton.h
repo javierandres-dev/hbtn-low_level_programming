@@ -12,3 +12,13 @@ void swap_int(int *a, int *b);
 #define _STRLEN_H
 int _strlen(char *s);
 #endif
+
+#ifndef _PUTS_H
+#define _PUTS_H
+void _puts(char *str);
+#endif
+
+#ifndef _PUTCHAR_H
+#define _PUTCHAR_H
+int _putchar(char c);
+#endif
