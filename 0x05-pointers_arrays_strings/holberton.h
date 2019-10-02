@@ -32,3 +32,8 @@ void print_rev(char *s);
 #define _REV_STRING_H
 void rev_string(char *s);
 #endif
+
+#ifndef _PUTS2_H
+#define _PUTS2_H
+void puts2(char *str);
+#endif
