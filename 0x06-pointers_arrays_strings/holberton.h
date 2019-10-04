@@ -17,3 +17,8 @@ char *_strncat(char *dest, char *src, int n);
 #define _STRNCPY_H
 char *_strncpy(char *dest, char *src, int n);
 #endif
+
+#ifndef _STRCMP_H
+#define _STRCMP_H
+int _strcmp(char *s1, char *s2);
+#endif
