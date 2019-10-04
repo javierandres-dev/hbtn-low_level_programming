@@ -27,3 +27,8 @@ int _strcmp(char *s1, char *s2);
 #define REVERSE_ARRAY_H
 void reverse_array(int *a, int n);
 #endif
+
+#ifndef STRING_TOUPPER_H
+#define STRING_TOUPPER_H
+char *string_toupper(char *s);
+#endif
