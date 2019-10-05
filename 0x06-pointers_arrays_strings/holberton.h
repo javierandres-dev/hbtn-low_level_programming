@@ -22,3 +22,23 @@ char *_strncpy(char *dest, char *src, int n);
 #define _STRCMP_H
 int _strcmp(char *s1, char *s2);
 #endif
+
+#ifndef REVERSE_ARRAY_H
+#define REVERSE_ARRAY_H
+void reverse_array(int *a, int n);
+#endif
+
+#ifndef STRING_TOUPPER_H
+#define STRING_TOUPPER_H
+char *string_toupper(char *s);
+#endif
+
+#ifndef CAP_STRING_H
+#define CAP_STRING_H
+char *cap_string(char *s);
+#endif
+
+#ifndef LEET_H
+#define LEET_H
+char *leet(char *s);
+#endif

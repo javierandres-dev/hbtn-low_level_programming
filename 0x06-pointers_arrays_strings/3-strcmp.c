@@ -7,14 +7,18 @@
  */
 int _strcmp(char *s1, char *s2)
 {
-	int i = 0;
-	int j = 0;
-	int x;
+	int i;
+	int ret;
 
-	while (s1[i] != '\0')
+	for (i = 0; i != s1['\0']; i++)
 	{
-		i++;
+		ret = s1[i] - s2[i];
+		if (ret != 0)
+		{
+			break;
+		}
 	}
+<<<<<<< HEAD
 
 	while (s2[j] != '\0')
 	{
@@ -34,4 +38,7 @@ int _strcmp(char *s1, char *s2)
 		x = 0;
 	}
 	return (x);
+=======
+	return (ret);
+>>>>>>> 99bcf252d44b5e894b55241b1efe4b31f929dd35
 }
