@@ -6,31 +6,27 @@
  */
 int main(void)
 {
-	int num1;
-	int num2;
-	int num3;
-	int num4;
+	int i = '0';
+	int j = '1';
+	int a = i;
+	int b = i;
+	int c = i;
+	int d = i;
 
-	for (num1 = '0'; num1 <= '9'; num1++)
-	{
-		for (num2 = '0'; num2 <= '9'; num2++)
-		{
-			for (num3 = '0'; num3 <= '9'; num3++)
-			{
-				for (num4 = '1'; num4 <= '9'; num4++)
-				{
-					if (num2 < num4)
-{
-					putchar(num1);
-					putchar(num2);
-					putchar(num3);
-					putchar(num4);
-					putchar(' ');
-}
-				}
-			}
-		}
-	}
+	for (; i <= '9';i++)
+	  {
+	    for (; j <= '9';j++)
+	      {
+		putchar(a);
+		putchar(b);
+		putchar(' ');
+		putchar(c);
+		putchar(d);
+		putchar(',');
+		putchar(' ');
+		d = j;
+	      }
+	  }
 	putchar('\n');
 	return (0);
 }
