@@ -2,7 +2,8 @@
 /**
  * rot13 - function that encodes a string using rot13.
  * @s: input
- * Return: outpu */
+ * Return: outpu
+ */
 char *rot13(char *s)
 {
 	int i;
@@ -17,6 +18,7 @@ char *rot13(char *s)
 			if (s[i] == x[j])
 			{
 				s[i] = y[j];
+				break;
 			}
 		}
 	}
