@@ -17,3 +17,8 @@ char *_memcpy(char *dest, char *src, unsigned int n);
 #define _STRCHR_H
 char *_strchr(char *s, char c);
 #endif
+
+#ifndef _STRSPN_H
+#define _STRSPN_H
+unsigned int _strspn(char *s, char *accept);
+#endif
