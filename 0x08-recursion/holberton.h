@@ -27,3 +27,8 @@ int factorial(int n);
 #define _POW_RESURSION_H
 int _pow_recursion(int x, int y);
 #endif
+
+#ifndef _SQRT_RECURSION_H
+#define _SQRT_RECURSION_H
+int _sqrt_recursion(int n);
+#endif
