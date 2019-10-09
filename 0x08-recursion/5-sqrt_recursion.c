@@ -1,7 +1,8 @@
+#include "holberton.h"
 /**
  * _sqrt_recursion_aux - function auxiliar.
  * @n: input
- * @y: input
+ * @x: input
  * Return: output
  */
 int _sqrt_recursion_aux(int n, int x)
@@ -16,7 +17,6 @@ int _sqrt_recursion_aux(int n, int x)
 	}
 	return (_sqrt_recursion_aux(n, x + 1));
 }
-#include "holberton.h"
 /**
  * _sqrt_recursion - function that returns the natural square root of a number.
  * @n: input
