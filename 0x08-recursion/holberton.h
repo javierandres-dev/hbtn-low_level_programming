@@ -12,3 +12,8 @@ void _puts_recursion(char *s);
 #define _PRINT_REV_RECURSION_H
 void _print_rev_recursion(char *s);
 #endif
+
+#ifndef _STRLEN_RECURSION_H
+#define _STRLEN_RECURSION_H
+int _strlen_recursion(char *s);
+#endif
