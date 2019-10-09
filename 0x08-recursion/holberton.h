@@ -17,3 +17,8 @@ void _print_rev_recursion(char *s);
 #define _STRLEN_RECURSION_H
 int _strlen_recursion(char *s);
 #endif
+
+#ifndef FACTORIAL_H
+#define FACTORIAL_H
+int factorial(int n);
+#endif
