@@ -37,3 +37,8 @@ int _sqrt_recursion(int n);
 #define IS_PRIME_NUMBER_H
 int is_prime_number(int n);
 #endif
+
+#ifndef IS_PALINDROME_H
+#define IS_PALINDROME_H
+int is_palindrome(char *s);
+#endif
