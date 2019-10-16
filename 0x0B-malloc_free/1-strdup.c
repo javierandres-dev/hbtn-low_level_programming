@@ -22,13 +22,9 @@ char *_strdup(char *str)
 	{
 		return (NULL);
 	}
-	else
+	for (j = 0; str[j] != '\0'; j++)
 	{
-		for (j = 0; str[j] != '\0'; j++)
-		{
-			ar[j] = str[j];
-		}
-		ar[j] = '\0';
-		return (ar);
+		ar[j] = str[j];
 	}
+	return (ar);
 }
