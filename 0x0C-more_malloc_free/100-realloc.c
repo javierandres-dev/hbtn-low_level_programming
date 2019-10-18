@@ -37,10 +37,12 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	ar = malloc(sizeof(char) * new_size);
 	if (ar == NULL)
 	{
+		free(ptr);
 		return (NULL);
 	}
 	else
 	{
+		free(ptr);
 		return (ar);
 	}
 }
