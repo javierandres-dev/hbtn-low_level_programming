@@ -39,7 +39,7 @@ void op_string(va_list al)
 
 	if (*s == 0)
 	{
-		printf("nil");
+		printf("(nil)");
 	}
 	printf("%s", s);
 }
