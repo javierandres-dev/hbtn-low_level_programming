@@ -63,7 +63,7 @@ void print_all(const char * const format, ...)
 
 	va_start(al, format);
 	x = 0;
-	while (format[x] && format)
+	while (format && format[x])
 	{
 		y = 0;
 		while (y < 4)
@@ -71,8 +71,8 @@ void print_all(const char * const format, ...)
 			if (ops[y].op[0] == format[x])
 			{
 				printf("%s", separator);
-				separator = ", ";
 				ops[y].func(al);
+				separator = ", ";
 			}
 			y++;
 		}
