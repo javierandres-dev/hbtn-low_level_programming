@@ -40,9 +40,11 @@ void op_string(va_list al)
 	if (*s != 0)
 	{
 		printf("%s", s);
-		return;
 	}
-	printf("nil");
+	else
+	{
+		printf("nil");
+	}
 }
 /**
 * print_all - function that prints anything.
