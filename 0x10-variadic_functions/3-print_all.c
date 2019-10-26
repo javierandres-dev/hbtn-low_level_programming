@@ -37,11 +37,11 @@ void op_string(va_list al)
 {
 	char *s = va_arg(al, char*);
 
-	if (*s == 0)
+	if (*s != 0)
 	{
-		printf("(nil)");
+		printf("%s", s);
 	}
-	printf("%s", s);
+	printf("(nil)");
 }
 /**
 * print_all - function that prints anything.
@@ -59,7 +59,7 @@ void print_all(const char * const format, ...)
 	va_list al;
 	int x;
 	int y;
-	char *separator = "";
+	char *separator;
 
 	va_start(al, format);
 	x = 0;
