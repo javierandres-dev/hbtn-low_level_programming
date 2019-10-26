@@ -37,14 +37,11 @@ void op_string(va_list al)
 {
 	char *s = va_arg(al, char*);
 
-	if (*s != 0)
-	{
-		printf("%s", s);
-	}
-	else
+	if (*s == 0)
 	{
 		printf("nil");
 	}
+	printf("%s", s);
 }
 /**
 * print_all - function that prints anything.
