@@ -41,6 +41,7 @@ void op_string(va_list al)
 	if (*s == 0)
 	{
 		printf("(nil)");
+		return;
 	}
 	printf("%s", s);
 }
