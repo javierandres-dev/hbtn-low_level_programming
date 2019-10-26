@@ -71,8 +71,8 @@ void print_all(const char * const format, ...)
 			if (ops[y].op[0] == format[x])
 			{
 				printf("%s", separator);
-				ops[y].func(al);
 				separator = ", ";
+				ops[y].func(al);
 			}
 			y++;
 		}
