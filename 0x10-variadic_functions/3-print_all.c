@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <stdlib.h>
 #include <stdarg.h>
 #include "variadic_functions.h"
 /**
@@ -38,7 +37,7 @@ void op_string(va_list al)
 {
 	char *s = va_arg(al, char*);
 
-	if (*s == 0)
+	if (s == 0)
 	{
 		printf("(nil)");
 		return;
