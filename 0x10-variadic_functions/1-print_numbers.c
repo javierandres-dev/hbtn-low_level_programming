@@ -28,6 +28,10 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 				printf("%d\n", value);
 			}
 		}
+		else
+		{
+			separator = "";
+		}
 	}
 	va_end(list);
 }
