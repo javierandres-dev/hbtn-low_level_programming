@@ -9,18 +9,18 @@
  */
 void print_numbers(const char *separator, const unsigned int n, ...)
 {
-	va_list list;
+	va_list al;
 	unsigned int i;
 	int value;
 
-	va_start(list, n);
 	if (separator == NULL)
 	{
 		separator = "";
 	}
+	va_start(al, n);
 	for (i = 0; i < n; i++)
 	{
-		value = va_arg(list, unsigned int);
+		value = va_arg(al, unsigned int);
 		if (i < n - 1)
 		{
 			printf("%d%s", value, separator);
@@ -30,5 +30,5 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 			printf("%d\n", value);
 		}
 	}
-	va_end(list);
+	va_end(al);
 }
