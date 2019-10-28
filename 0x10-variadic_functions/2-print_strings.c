@@ -30,6 +30,6 @@ void print_strings(const char *separator, const unsigned int n, ...)
 			printf("%s%s", value, separator);
 		}
 	}
-	va_end(al);
 	printf("\n");
+	va_end(al);
 }
