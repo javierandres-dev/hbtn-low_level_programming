@@ -9,30 +9,30 @@
  */
 void print_strings(const char *separator, const unsigned int n, ...)
 {
-	if (separator != NULL)
-	{
-		va_list al;
-		unsigned int i;
-		char *value;
+	va_list al;
+	unsigned int i;
+	char *value;
 
-		va_start(al, n);
-		for (i = 0; i < n; i++)
+	va_start(al, n);
+	for (i = 0; i < n; i++)
+	{
+		value = va_arg(al, char*);
+		if (value == 0)
 		{
-			value = va_arg(al, char*);
-			if (value == 0)
-			{
-				printf("(nil)");
-			}
+			printf("(nil)");
+		}
+		if (separator != NULL)
+		{
 			if (i < n - 1)
 			{
 				printf("%s%s", value, separator);
 			}
-			if (i == n - 1)
-			{
-				printf("%s", value);
-			}
 		}
-		va_end(al);
-		printf("\n");
+		if (i == n - 1 || separator == NULL)
+		{
+			printf("%s", value);
+		}
 	}
+	va_end(al);
+	printf("\n");
 }
