@@ -17,19 +17,19 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	for (i = 0; i < n; i++)
 	{
 		value = va_arg(al, char*);
-		if (value == 0)
+		if (value == 0 || separator == NULL)
 		{
 			printf("(nil)");
 		}
-		if (separator == NULL || i == n - 1)
+		if (i == n - 1 || separator == NULL)
 		{
 			printf("%s", value);
 		}
-		if (separator != NULL && i < n - 1)
+		if (i < n - 1 && separator != NULL)
 		{
 			printf("%s%s", value, separator);
 		}
 	}
-	printf("\n");
 	va_end(al);
+	printf("\n");
 }
