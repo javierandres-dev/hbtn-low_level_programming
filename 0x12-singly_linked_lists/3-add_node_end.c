@@ -3,28 +3,33 @@
  * add_node_end - function that adds a new node at the end of a list_t list.
  * @head: call struct
  * @str: argument
- * Return: Always
+ * Return: the address of the new element, or NULL if it failed.
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
 	list_t *new;
-	int i = *head;
+	unsigned int i;
+	list_t *tmp = *head;
 
 	new = malloc(sizeof(list_t));
 	if (new == NULL)
 	{
 		return (NULL);
 	}
-	else
+	for (i = 0; str[i] != '\0'; i++)
+		;
+	new->str = strdup(str);
+	new->len = i;
+	new->next = NULL;
+	if (*head == NULL)
 	{
-		new->str = strdup(str);
-		new->next = *head;
 		*head = new;
-		while (i->next != NULL)
-		{
-			i = i->next;
-		}
-		i->next = new;
+		return (new);
 	}
-	return (*head);
+	while (tmp->next != NULL)
+	{
+		tmp = tmp->next;
+	}
+	tmp->next = new;
+	return (tmp);
 }
