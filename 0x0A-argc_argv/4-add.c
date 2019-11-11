@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include <ctype.h>
 /**
  * main - program that adds positive numbers.
  * @argc: count
@@ -11,30 +12,28 @@
 int main(int argc, char **argv)
 {
 	int i;
+	int j;
 	int number;
 	int sum;
 
-	if (argc == 1)
+	if (argc > 1)
 	{
-		printf("0\n");
-		return (0);
-	}
-	i = 1;
-	while (argv[i] != '\0')
-	{
-		if (*argv[i] < 48 || *argv[i] > 57)
+		for (i = 1; i < argc; i++)
 		{
-			printf("Error\n");
-			return (1);
-		}
-		else
-		{
+			for (j = 0; argv[i][j]; j++)
+			{
+				if (argv[i][j] < 48 || argv[i][j] > 57)
+				{
+					printf("Error\n");
+					return (1);
+				}
+			}
 			number = atoi(argv[i]);
 			sum += number;
 		}
-		i++;
+		printf("%d\n", sum);
+		return (0);
 	}
-	printf("%d\n", sum);
+	printf("0\n");
 	return (0);
-
 }
