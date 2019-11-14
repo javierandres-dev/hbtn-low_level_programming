@@ -8,9 +8,9 @@
  */
 int main(void)
 {
-        pid_t my_ppid;
+	pid_t my_ppid;
 
-        my_ppid = getppid();
-        printf("PID of the parent process: %u\n", my_ppid);
-        return (0);
+	my_ppid = getppid();
+	printf("PID of the parent process: %u\n", my_ppid);
+	return (0);
 }
