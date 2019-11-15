@@ -1,8 +1,10 @@
 #include <stdio.h>
 /**
  * main - function that prints all the arguments, without using ac.
- * @av: is a NULL terminated array of strings
  * @ac: is the number of items in av
+ * @av: is a NULL terminated array of strings
+ * av[0] usually contains the name used to invoke the current program.
+ * av[1] is the first argument of the program, av[2] the second, and so on.
  * Return: print all the arguments
  */
 int main(int ac, char **av)

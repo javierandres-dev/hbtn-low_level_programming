@@ -3,7 +3,7 @@
 /**
  * main - program that prints "$ ", wait for the user to enter a command,
  * prints it on the next line.
- * Return: output
+ * Return: 0 for EXIT_SUCCESS, or 1 for EXIT_FAILURE
  */
 int main(void)
 {
@@ -13,12 +13,13 @@ int main(void)
 	line = malloc(sizeof(char) * len);
 	if (line == NULL)
 	{
-		exit(EXIT_FAILURE);
+		free(line);
+		return (1);
 	}
 
 	printf("$ ");
 	getline(&line, &len, stdin);
 	printf("%s", line);
 	free(line);
-	exit(EXIT_SUCCESS);
+	return (0);
 }
