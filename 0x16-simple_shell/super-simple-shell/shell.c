@@ -1,8 +1,5 @@
-#include <stdlib.h>
 #include <stdio.h>
-#include <sys/types.h>
-#include <sys/stat.h>
-#include <unistd.h>
+#include <stdlib.h>
 #include <string.h>
 /**
  * main - first version of a super simple shell that can
@@ -12,77 +9,61 @@
  */
 int main()
 {
-	pid_t child;
-	int status;
-	char *line;
-	size_t len;
-	const char split[2] = " \n";
-	char *run;
-	char **exe;
-	int i;
+	size_t len = NULL;
+	char *line = NULL;
+	char **exe = NULL;
+	const char split = NULL;
+	char *run = NULL;
+	int i = NULL;
+	pid_t process = NULL;
+	int status = NULL;
 
 	while (1)
 	{
-		child = fork();
-		if (child < 0)
+		line = malloc(sizeof(char) * len);
+		if (line == NULL)
 		{
-			perror("Error: CHILD < 0 !!!\n");
-			return (-1);
+			free(line);
+			return (1);
 		}
-		if (child == 0)
+		exe = malloc(sizeof(char) * len);
+		if (line == NULL)
 		{
-			line = malloc(sizeof(char) * len);
-			if (line == NULL)
-			{
-				free(line);
-				return (0);
-			}
-			printf("#cisfun$ ");
-			getline(&line, &len, stdin);
-			//printf("LINE: %s", line);
-			run = strtok(line, split);
-			exe = malloc(sizeof(char) * len);
-			//printf("LEN: %i\n", (int) len);
-			if (line == NULL)
-			{
-				free(line);
-				return (0);
-			}
-			i = 0;
-			while(run != NULL)
-			{
-				//printf("RUN: %s\n", run);
-				exe[i] = run;
-				//printf("EXE: %s\n", exe[i]);
-				run = strtok(NULL, split);
-				i++;
-			}
-			exe[i] = 0;
+			free(exe);
+			return (1);
+		}
+		printf("#cisfun$ ");
+		getline(&line, &len, stdin);
+		const char split[3] = " \n\t";
+		run = strtok(line, split);
+		i = 0;
+		while(run != NULL)
+		{
+			exe[i] = run;
+			run = strtok(NULL, split);
+			i++;
+		}
+		exe[i] = 0;
+		process = fork();
+		if (process < 0)
+		{
+			perror("Error: PROCESS !!!\n");
+			return (1);
+		}
+		if (process == 0)
+		{
 			if (execve(exe[0], exe, NULL) == -1)
 			{
-				perror("Error: !!!");
+				perror("Error: EXECUTABLE !!!\n");
 			}
 		}
-		if (child > 0)
+		if (process > 0)
 		{
 			wait(&status);
 		}
-		//free(line);
-		//free(exe);
+		free(line);
+		free(exe);
+		i = 0;
 	}
 	return (0);
 }
-/*
-
-	int i = 0;
-	int j = 0;
-	char **run;
-
-
-  printf("You wrote: %s", line);
-  i++;
-  sleep(1);
-  _exit(0);
-  printf("I'm child, my PID is: %d and my father is: %d\n", getpid(), getppid());
-  printf("I'm father, my PID is: %d\n", getpid());
-*/
