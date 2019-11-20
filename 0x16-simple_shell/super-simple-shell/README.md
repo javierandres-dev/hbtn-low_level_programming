@@ -1,1 +1,0 @@
-This is README file for 0x16-simple-shell

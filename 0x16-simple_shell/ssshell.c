@@ -63,7 +63,6 @@ int main()
 		}
 		free(line);
 		free(exe);
-		i = 0;
 	}
 	return (0);
 }

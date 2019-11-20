@@ -17,7 +17,7 @@ int main(void)
 		return (1);
 	}
 
-	printf("$ ");
+	printf("#cisfun$ ");
 	getline(&line, &len, stdin);
 	printf("%s", line);
 	free(line);
