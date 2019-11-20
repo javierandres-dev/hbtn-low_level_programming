@@ -12,6 +12,7 @@ int main()
 	size_t len = NULL;
 	char *line = NULL;
 	char **exe = NULL;
+	int ret = NULL;
 	const char split = NULL;
 	char *run = NULL;
 	int i = NULL;
@@ -33,7 +34,13 @@ int main()
 			return (1);
 		}
 		printf("#cisfun$ ");
-		getline(&line, &len, stdin);
+		ret = getline(&line, &len, stdin);
+		if (ret == 1)
+		{
+			free(line);
+			free(exe);
+			continue;
+		}
 		const char split[3] = " \n\t";
 		run = strtok(line, split);
 		i = 0;
