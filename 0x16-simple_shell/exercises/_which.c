@@ -1,12 +1,12 @@
 #include <stdio.h>
-//#include <dirent.h>
+#include <dirent.h>
 /**
  * main - program that looks for files in the current PATH.
  *
  * Return: Always 0.
  */
 int main (int c, char *v[]) {
-  // struct dirent *pDirent;
+  struct dirent *pDirent;
   DIR *pDir;
 
   if (c < 2) {
