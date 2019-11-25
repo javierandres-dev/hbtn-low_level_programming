@@ -1,11 +1,10 @@
 #include "exercises.h"
 /**
-* _getenv - function that gets an environment variable. (without using getenv)
+* main - function that prints each directory contained in the the environment variable PATH, one directory per line.
 */
-extern char **environ;
-//int main()
-char *_getenv(const char *name)
+int main()
 {
+	extern char **environ;
 	char *check;
 	int i;
 	//char *name = "USER=vagrant";
@@ -24,5 +23,5 @@ char *_getenv(const char *name)
 		}
 		i++;
 	}
-	return (NULL);
+	return (0);
 }
