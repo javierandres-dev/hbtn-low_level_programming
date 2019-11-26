@@ -6,9 +6,10 @@ int main()
 {
 	extern char **environ;
 	char *name = "PATH";
-	char *check;
 	int result;
+	char *check;
 	int i;
+	char *dir;
 	i = 0;
 	while(environ[i] != NULL)
 	{
@@ -17,9 +18,19 @@ int main()
 		if (result  == 0)
 		{
 			check = strtok(NULL, "\0");
-			printf("Print PATH: %s\n", check);
+			//printf("Print PATH: %s\n", check);
+			dir = check;
+			//printf("Print dir: %s\n", dir);
 		}
 		i++;
+	}
+	//printf("Print dir: %s\n", dir);
+	check = strtok(dir, ":");
+	while(check != NULL)
+	{
+		//printf("Print check: %s\n", check);
+		printf("%s\n", check);
+		check = strtok(NULL, ":");
 	}
 	return (0);
 }
