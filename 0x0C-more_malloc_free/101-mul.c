@@ -1,41 +1,92 @@
-#include "holberton.h"
-#include <stdio.h>
-#include <stdlib.h>
 #include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
+#include <ctype.h>
 /**
- * _puts - check the code for Holberton School students.
- * @str: The variable for print
- * Return: Always 0.
+ * _isnumber - checks if string is number
+ *
+ * @s: string
+ *
+ * Return: 1 if number, 0 if not
  */
-void _puts(char *str)
+int _isnumber(char *s)
 {
-	int a;
+	int i, check, d;
 
-	for (; str[a] != 0; a++)
-		_putchar(*(str + a));
-	_putchar('\n');
+	d = 0, check = 1;
+	for (i = 0; *(s + i) != 0; i++)
+	{
+		d = isdigit(*(s + i));
+		if (d == 0)
+		{
+			check = 0;
+			break;
+		}
+	}
+	return (check);
 }
+
+/**
+ * _callocX - reserves memory initialized to 0
+ *
+ * @nmemb: # of bytes
+ *
+ * Return: pointer
+ */
+char *_callocX(unsigned int nmemb)
+{
+	unsigned int i;
+	char *p;
+
+	p = malloc(nmemb + 1);
+	if (p == 0)
+		return (0);
+	for (i = 0; i < nmemb; i++)
+		p[i] = '0';
+	p[i] = '\0';
+	return (p);
+}
+
 /**
  * main - program that multiplies two positive numbers.
- * @argc: input
- * @argv: input
- * Return: Always  0 (Success)
+ *
+ * @argc: count
+ * @argv: vector
+ * Return: output
  */
-
-int main(int argc, char *argv[])
+int main(int argc, char **argv)
 {
-	int a, res;
+	int i, j, l1, l2, lful, mul, add, ten, ten2, tl, zer = 0;
+	char *res;
 
-	res = 1;
-	if (argc > 2)
+	if (argc != 3 || _isnumber(argv[1]) == 0 || _isnumber(argv[2]) == 0)
+		printf("Error\n"), exit(98);
+	if (atoi(argv[1]) == 0 || atoi(argv[2]) == 0)
+		printf("0\n"), exit(0);
+	l1 = strlen(argv[1]), l2 = strlen(argv[2]);
+	lful = l1 + l2;
+	res = _callocX(lful);
+	if (res == 0)
+		printf("Error\n"), exit(98);
+	for (i = l2 - 1; i >= 0; i--)
 	{
-		for (a = 1; a < argc; a++)
+		ten = 0, ten2 = 0;
+		for (j = l1 - 1; j >= 0; j--)
 		{
-			res = res * atoi(argv[a]);
+			tl = i + j + 1;
+			mul = (argv[1][j] - '0') * (argv[2][i] - '0') + ten;
+			ten =  mul / 10;
+			add = (res[tl] - '0') + (mul % 10) + ten2;
+			ten2 = add / 10;
+			res[tl] = (add % 10) + '0';
 		}
-		printf("%d\n", res);
+		res[tl - 1] = (ten + ten2) + '0';
 	}
-	else
-		printf("Error\n");
+	if (res[0] == '0')
+		zer = 1;
+	for (; zer < lful; zer++)
+		printf("%c", res[zer]);
+	printf("\n");
+	free(res);
 	return (0);
 }
