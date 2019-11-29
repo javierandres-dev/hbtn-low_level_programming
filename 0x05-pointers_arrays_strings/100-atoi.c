@@ -6,32 +6,24 @@
  */
 int _atoi(char *s)
 {
-	int i;
-	int j;
-	int sign;
-	unsigned int number;
+	int i = 0;
+	unsigned int res = 0;
+	int signal = 1;
 
-	i = 0;
-	while (s[i] != '\0')
+	for (i = 0; s[i] != '\0'; ++i)
 	{
-		i++;
-	}
-	for (j = 0; j < i; j++)
-	{
-		sign = 0;
-		if (s[j] == 45)
+		if (i[s] == '-')
 		{
-			sign++;
+			signal *= -1;
 		}
-		number = 0;
-		if (s[j] >= 48 && s[j] <= 57)
+		if (i[s] >= '0' && i[s] <= '9')
 		{
-			number = (number * 10) + s[j];
-			return (number * sign);
-		}
-		else
-		{
-			return (0);
+			res = res + s[i] - '0';
+			if ((*(s + (i + 1)) >= '0') && (*(s + (i + 1)) <= '9'))
+				res *= 10;
+			else
+				break;
 		}
 	}
+	return (res * signal);
 }
