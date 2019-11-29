@@ -42,3 +42,8 @@ int is_prime_number(int n);
 #define IS_PALINDROME_H
 int is_palindrome(char *s);
 #endif
+
+#ifndef WILDCMP_H
+#define WILDCMP_H
+int wildcmp(char *s1, char *s2);
+#endif
