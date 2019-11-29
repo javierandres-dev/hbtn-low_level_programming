@@ -4,7 +4,7 @@ int _putchar(char c);
 #endif
 
 #ifndef _STRCAT_H
-#define _SRTCAT_H
+#define _STRCAT_H
 char *_strcat(char *dest, char *src);
 #endif
 
@@ -46,4 +46,19 @@ char *leet(char *s);
 #ifndef ROT13_H
 #define ROT13_H
 char *rot13(char *s);
+#endif
+
+#ifndef PRINT_NUMBER_H
+#define PRINT_NUMBER_H
+void print_number(int n);
+#endif
+
+#ifndef INFINITE_ADD_H
+#define INFINITE_ADD_H
+char *infinite_add(char *n1, char *n2, char *r, int size_r);
+#endif
+
+#ifndef PRINT_BUFFER_H
+#define PRINT_BUFFER_H
+void print_buffer(char *b, int size);
 #endif
