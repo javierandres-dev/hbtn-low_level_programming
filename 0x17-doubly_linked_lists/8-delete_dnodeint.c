@@ -6,12 +6,18 @@
  * @index:  is the index of the node that should be deleted. Index starts at 0
  * Return: 1 if it succeeded, -1 if it failed
  */
+size_t dlistint_len(const dlistint_t *h)
+{
+	if (h == NULL || h->next == NULL)
+		return (0);
+	return (1 + dlistint_len(h->next));
+}
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
 	dlistint_t *tmp = *head;
 	unsigned int i = 0;
 
-	if (tmp == NULL || head == NULL)
+	if (dlistint_len(*head) < index || tmp == NULL || head == NULL)
 	{
 		return (-1);
 	}
