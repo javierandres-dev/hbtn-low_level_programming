@@ -47,7 +47,7 @@ by _Julien Barbier_
 * [x] 10. 00...99
 * [x] 11. Inventing is a combination of brains and materials. The more brains you use, the less material you need
 * [x] 12. The success combination in business is: Do what you do better... and: do more of what you do...
-* [] 13. Software is eating the World
+* [ ] 13. Software is eating the World
 
 ## Developer
 Javier Andrés Garzón Patarroyo
