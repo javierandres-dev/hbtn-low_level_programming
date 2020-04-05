@@ -11,8 +11,8 @@ At the end of this project, you are expected to be able to...
 ## holbertonschool-low_level_programming
 * [x] 212 0x00. C - Hello, World
 * [x] 213 0x01. C - Variables, if, else, while
-* [x] 539 0x03. C - Debugging
 * [x] 214 0x02. C - Functions, nested loops
+* [x] 539 0x03. C - Debugging
 * [x] 215 0x04. C - More functions, more nested loops
 * [x] 216 0x05. C - Pointers, arrays and strings
 * [x] 217 0x06. C - More pointers, arrays and strings
