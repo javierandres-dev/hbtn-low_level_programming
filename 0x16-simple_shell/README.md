@@ -29,29 +29,29 @@ by _Julien Barbier_
 * [Everything you need to know to start coding your own shell](https://intranet.hbtn.io/concepts/64)
 
 ## Tasks
-* [x] 
-* [x] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
-* [ ] 
+* [ ] 0. README, man, AUTHORS
+* [ ] 1. Betty would be proud
+* [ ] 2. Test suite
+* [ ] 3. Simple shell 0.1
+* [ ] 4. Simple shell 0.1.1
+* [ ] 5. Simple shell 0.2
+* [ ] 6. Simple shell 0.2.1
+* [ ] 7. Simple shell 0.3
+* [ ] 8. Simple shell 0.4
+* [ ] 9. Simple shell 0.4.1
+* [ ] 10. Simple shell 0.4.2
+* [ ] 11. Simple shell 1.0
+* [ ] 12. setenv, unsetenv
+* [ ] 13. cd
+* [ ] 14. ; 
+* [ ] 15. && and ||
+* [ ] 16. alias
+* [ ] 17. Variables
+* [ ] 18. Comments
+* [ ] 19. help
+* [ ] 20. history
+* [ ] 21. File as input
+* [ ] 22. What happens when you type ls -l in the shell
 
 ## Developers
 Carlos Hernando Lemus Martínez, Camilo Araque Caro, Javier Andrés Garzón Patarroyo
