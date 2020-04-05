@@ -29,8 +29,8 @@ by _Julien Barbier_
 * [Everything you need to know to start coding your own shell](https://intranet.hbtn.io/concepts/64)
 
 ## Tasks
-* [ ] 0. README, man, AUTHORS
-* [ ] 1. Betty would be proud
+* [x] 0. README, man, AUTHORS
+* [x] 1. Betty would be proud
 * [ ] 2. Test suite
 * [ ] 3. Simple shell 0.1
 * [ ] 4. Simple shell 0.1.1
@@ -39,7 +39,7 @@ by _Julien Barbier_
 * [ ] 7. Simple shell 0.3
 * [ ] 8. Simple shell 0.4
 * [ ] 9. Simple shell 0.4.1
-* [ ] 10. Simple shell 0.4.2
+* [x] 10. Simple shell 0.4.2
 * [ ] 11. Simple shell 1.0
 * [ ] 12. setenv, unsetenv
 * [ ] 13. cd
@@ -51,7 +51,7 @@ by _Julien Barbier_
 * [ ] 19. help
 * [ ] 20. history
 * [ ] 21. File as input
-* [ ] 22. What happens when you type ls -l in the shell
+* [x] 22. What happens when you type ls -l in the shell
 
 ## Developers
 Carlos Hernando Lemus Martínez, Camilo Araque Caro, Javier Andrés Garzón Patarroyo
