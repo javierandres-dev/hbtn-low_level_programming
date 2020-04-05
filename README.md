@@ -1,5 +1,5 @@
 # Foundations
-Low-level programming & Algorithm ― Hatching out
+Low-level programming & Algorithm
 
 ###### :copyright:
 **[Holberton School](https://www.holbertonschool.com/)**
