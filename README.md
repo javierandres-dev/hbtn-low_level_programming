@@ -4,6 +4,10 @@ Low-level programming & Algorithm ― Hatching out
 ###### :copyright:
 **[Holberton School](https://www.holbertonschool.com/)**
 
+###### Global Objective
+At the end of this project, you are expected to be able to...
+- ...[explain to anyone](https://fs.blog/2012/04/feynman-technique/)
+
 ## holbertonschool-low_level_programming
 * [x] 212 0x00. C - Hello, World
 * [x] 213 0x01. C - Variables, if, else, while
