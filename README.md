@@ -30,6 +30,7 @@ At the end of this project, you are expected to be able to...
 * [x] 232 0x14. C - Bit manipulation
 * [x] 242 0x18. C - Dynamic libraries
 * [x] 273 0x1C. C - Makefiles
+* [x] 295 0x1E. C - Search Algorithms
 
 ## Developer
 Javier Andrés Garzón Patarroyo
