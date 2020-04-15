@@ -29,7 +29,7 @@ You will be asked to write files containing big O notations. Please use this for
 * [Binary search algorithm](https://en.wikipedia.org/wiki/Binary_search_algorithm)
 
 ## Tasks
-* [ ] 0. Linear search
+* [x] 0. Linear search
 * [ ] 1. Binary search
 * [ ] 2. Big O #0
 * [ ] 3. Big O #1
