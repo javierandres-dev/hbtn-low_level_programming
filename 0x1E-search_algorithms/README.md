@@ -30,12 +30,12 @@ You will be asked to write files containing big O notations. Please use this for
 
 ## Tasks
 * [x] 0. Linear search
-* [ ] 1. Binary search
-* [ ] 2. Big O #0
-* [ ] 3. Big O #1
-* [ ] 4. Big O #2
-* [ ] 5. Big O #3
-* [ ] 6. Big O #4
+* [x] 1. Binary search
+* [x] 2. Big O #0
+* [x] 3. Big O #1
+* [x] 4. Big O #2
+* [x] 5. Big O #3
+* [x] 6. Big O #4
 * [ ] 7. Jump search
 * [ ] 8. Big O #5
 * [ ] 9. Interpolation search
