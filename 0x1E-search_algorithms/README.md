@@ -48,6 +48,6 @@ You will be asked to write files containing big O notations. Please use this for
 
 ## Developer
 Javier Andrés Garzón Patarroyo
-- [website](https://www.tecnoayuda.co/)
+- [website](https://tecnoayuda.co/)
 
 :man_technologist: :books: :computer: :globe_with_meridians:
