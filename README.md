@@ -1,14 +1,9 @@
 # Foundations
-Low-level programming & Algorithm
+## Low-level programming & Algorithm - Hatching out
+###### :copyright: **[Holberton School](https://www.holbertonschool.com/)**
 
-###### :copyright:
-**[Holberton School](https://www.holbertonschool.com/)**
-
-###### Global Objective
-At the end of this project, you are expected to be able to...
-- ...[explain to anyone](https://fs.blog/2012/04/feynman-technique/)
-
-## holbertonschool-low_level_programming
+## Projects
+:open_file_folder:
 * [x] 212 0x00. C - Hello, World
 * [x] 213 0x01. C - Variables, if, else, while
 * [x] 214 0x02. C - Functions, nested loops
@@ -33,7 +28,8 @@ At the end of this project, you are expected to be able to...
 * [x] 295 0x1E. C - Search Algorithms
 
 ## Developer
-Javier Andrés Garzón Patarroyo
-- [website](https://tecnoayuda.co/)
-
+Javier Andrés Garzón Patarroyo  
+:octocat: [GitHub](https://github.com/javierandresgp/)  
+:link: [Linkedin](https://www.linkedin.com/in/javierandresgp/)  
+:link: [Twitter](https://twitter.com/javierandresgp0)  
 :man_technologist: :books: :computer: :globe_with_meridians:
